@@ -1,0 +1,39 @@
+{
+	"type": "collection",
+	"name": "initialSyncC1",
+	"id": "8b1b1aac-c1ba-4a03-bb0f-a0e74fad5b9e",
+	"_attributes": {
+		"flags": {
+			"id": "bc30009e-2baf-4dff-999a-8d4e97f0ddb6"
+		}
+	},
+	"isPending": false,
+	"isDeleting": false,
+	"_foldersOrder": [],
+	"_pendingFoldersOrder": [],
+	"_order": [],
+	"_pendingOrder": [],
+	"initialVariables": null,
+	"events": null,
+	"auth": null,
+	"protocolProfileBehavior": {},
+	"description": null,
+	"createdAt": "2022-08-10T17:43:40.000Z",
+	"isForked": false,
+	"isPublic": false,
+	"isEditable": true,
+	"isDeletable": true,
+	"isArchived": false,
+	"isFavorite": false,
+	"isShareable": true,
+	"userCanCreateMock": true,
+	"userCanCreateMonitor": true,
+	"owner": "889210",
+	"foldersOrder": [],
+	"order": [],
+	"folders": [],
+	"requests": [],
+	"uid": "889210-8b1b1aac-c1ba-4a03-bb0f-a0e74fad5b9e",
+	"folders_order": [],
+	"variables": null
+}
