@@ -1,0 +1,167 @@
+{
+	"item": [
+		{
+			"id": "910da728-9065-4a63-9459-bf02fce4a04f",
+			"name": "Sample endpoint: Returns details about a particular user",
+			"request": {
+				"name": "Sample endpoint: Returns details about a particular user",
+				"description": {},
+				"url": {
+					"path": [
+						"user"
+					],
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"disabled": false,
+							"key": "id",
+							"value": "-21066109",
+							"description": "(Required) ID of the user"
+						}
+					],
+					"variable": []
+				},
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"method": "GET",
+				"auth": null
+			},
+			"response": [
+				{
+					"id": "beff13c8-ef76-4b5e-a370-768506aa0515",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"url": {
+							"path": [
+								"user"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-21066109"
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"description": {
+									"content": "Added as a part of security scheme: basic",
+									"type": "text/plain"
+								},
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"method": "GET",
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "consequat incididunt eiusmod nostrud aliquip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"body": "{\n  \"id\": -97657842,\n  \"name\": \"nisi elit laboris labore aliquip\",\n  \"tag\": \"tempor\"\n}",
+					"cookie": [],
+					"_postman_previewlanguage": "json"
+				},
+				{
+					"id": "85399cd0-39d3-422e-bca5-3d8f0e6d9c16",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"url": {
+							"path": [
+								"user"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-21066109"
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"description": {
+									"content": "Added as a part of security scheme: basic",
+									"type": "text/plain"
+								},
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"method": "GET",
+						"body": {}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"body": "{\n  \"code\": -62665094,\n  \"message\": \"reprehenderi\"\n}",
+					"cookie": [],
+					"_postman_previewlanguage": "json"
+				}
+			],
+			"event": [],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			}
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "localhost:3000",
+			"key": "baseUrl"
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>"
+			}
+		]
+	},
+	"info": {
+		"_postman_id": "7690e1a1-e1af-4819-b05a-8a60a8e4f293",
+		"name": "Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "",
+			"type": "text/plain"
+		}
+	}
+}
