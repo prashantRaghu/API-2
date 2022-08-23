@@ -7,7 +7,7 @@ servers:
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details about a particular user'
+      summary: 'Sample endpoint: Returns details about'
       operationId: listUser
       tags:
         - user
@@ -32,7 +32,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         default:
-          description: Unexpected error
+          description: Unexpected error has just occurred
           content:
             application/json:
               schema:
