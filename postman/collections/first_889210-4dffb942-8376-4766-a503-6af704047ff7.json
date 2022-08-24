@@ -1,0 +1,134 @@
+{
+	"item": [
+		{
+			"id": "5cd1b839-61c9-47b2-8141-651a677b55f5",
+			"name": "Sample endpoint: Returns details about",
+			"request": {
+				"name": "Sample endpoint: Returns details about",
+				"description": {},
+				"url": {
+					"path": [
+						"user"
+					],
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"disabled": false,
+							"key": "id",
+							"value": "80835113",
+							"description": "(Required) ID of the user"
+						}
+					],
+					"variable": []
+				},
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"method": "GET",
+				"auth": null
+			},
+			"response": [
+				{
+					"id": "517ce923-3b6e-422b-9245-dfd25470917f",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"url": {
+							"path": [
+								"user"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "80835113"
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "aliqua eu exercitation "
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"body": "{\n  \"id\": -91679372,\n  \"name\": \"ipsum consectetur dolore amet\",\n  \"tag\": \"cillum officia commodo Lorem\"\n}",
+					"cookie": [],
+					"_postman_previewlanguage": "json"
+				},
+				{
+					"id": "074ffee2-0e0d-4cfa-8307-2a1a69947608",
+					"name": "Unexpected error has just occurred",
+					"originalRequest": {
+						"url": {
+							"path": [
+								"user"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "80835113"
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"body": {}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"body": "{\n  \"code\": 90069313,\n  \"message\": \"ullamco in enim\"\n}",
+					"cookie": [],
+					"_postman_previewlanguage": "json"
+				}
+			],
+			"event": [],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			}
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "http://localhost:3000",
+			"key": "baseUrl"
+		}
+	],
+	"info": {
+		"_postman_id": "4dffb942-8376-4766-a503-6af704047ff7",
+		"name": "first",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "",
+			"type": "text/plain"
+		}
+	}
+}
