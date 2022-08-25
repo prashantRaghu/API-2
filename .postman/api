@@ -1,11 +1,10 @@
-id = d14f31b2-aba6-4933-9dcf-c3d8e1a59de6
+id = 7ec5668d-82fb-4dbb-90bd-6cc682fa09dd
 
 [relations]
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"2256ccea-904d-49cb-b76d-2f027dd19e7e","path":"API_Blueprint_889210-2256ccea-904d-49cb-b76d-2f027dd19e7e.json","metaData":{}}
-files[] = {"id":"05699c25-5366-47eb-94f4-edb128c12e07","path":"Generated Collection from Definition_889210-05699c25-5366-47eb-94f4-edb128c12e07.json","metaData":{}}
+files[] = {"id":"2256ccea-904d-49cb-b76d-2f0271419e7e","path":"API_Blueprint_889210-2256ccea-904d-49cb-b76d-2f027dd19e7e.json","metaData":{}}
 
 [relations.collections.metaData]
 
