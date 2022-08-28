@@ -1,13 +1,15 @@
 openapi: 3.0.0
 info:
-  version: '1'
-  title: API <> Repo
+  version: '1.0.0'
+  title: 'Sample APIs'
+  license:
+    name: MIT
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'localhost:3'
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details about'
+      summary: 'Sample endpoint: Returns details about a particular user'
       operationId: listUser
       tags:
         - user
@@ -32,7 +34,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         default:
-          description: Unexpected error has just occurred
+          description: Unexpected error
           content:
             application/json:
               schema:
@@ -63,3 +65,9 @@ components:
           format: int32
         message:
           type: string
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+  - BasicAuth: []

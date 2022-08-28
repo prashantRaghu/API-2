@@ -1,62 +1,68 @@
 {
+	"info": {
+		"_postman_id": "4dffb942-8376-4766-a503-6af704047ff7",
+		"name": "firs3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "889210-4dffb942-8376-4766-a503-6af704047ff7"
+	},
 	"item": [
 		{
-			"id": "5cd1b839-61c9-47b2-8141-651a677b55f5",
 			"name": "Sample endpoint: Returns details about",
+			"id": "5cd1b839-61c9-47b2-8141-651a677b55f5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
-				"name": "Sample endpoint: Returns details about",
-				"description": {},
-				"url": {
-					"path": [
-						"user"
-					],
-					"host": [
-						"{{baseUrl}}"
-					],
-					"query": [
-						{
-							"disabled": false,
-							"key": "id",
-							"value": "80835113",
-							"description": "(Required) ID of the user"
-						}
-					],
-					"variable": []
-				},
+				"method": "GET",
 				"header": [
 					{
 						"key": "Accept",
 						"value": "application/json"
 					}
 				],
-				"method": "GET",
-				"auth": null
+				"url": {
+					"raw": "{{baseUrl}}/user?id=80835113",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "80835113",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
 			},
 			"response": [
 				{
 					"id": "517ce923-3b6e-422b-9245-dfd25470917f",
 					"name": "Sample response: Details about a user by ID",
 					"originalRequest": {
+						"method": "GET",
+						"header": [],
 						"url": {
-							"path": [
-								"user"
-							],
+							"raw": "{{baseUrl}}/user?id=80835113",
 							"host": [
 								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
 							],
 							"query": [
 								{
 									"key": "id",
 									"value": "80835113"
 								}
-							],
-							"variable": []
-						},
-						"method": "GET",
-						"body": {}
+							]
+						}
 					},
 					"status": "OK",
 					"code": 200,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"disabled": false,
@@ -69,66 +75,74 @@
 							"value": "application/json"
 						}
 					],
-					"body": "{\n  \"id\": -91679372,\n  \"name\": \"ipsum consectetur dolore amet\",\n  \"tag\": \"cillum officia commodo Lorem\"\n}",
 					"cookie": [],
-					"_postman_previewlanguage": "json"
+					"body": "{\n  \"id\": -91679372,\n  \"name\": \"ipsum consectetur dolore amet\",\n  \"tag\": \"cillum officia commodo Lorem\"\n}"
 				},
 				{
 					"id": "074ffee2-0e0d-4cfa-8307-2a1a69947608",
 					"name": "Unexpected error has just occurred",
 					"originalRequest": {
+						"method": "GET",
+						"header": [],
 						"url": {
-							"path": [
-								"user"
-							],
+							"raw": "{{baseUrl}}/user?id=80835113",
 							"host": [
 								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
 							],
 							"query": [
 								{
 									"key": "id",
 									"value": "80835113"
 								}
-							],
-							"variable": []
-						},
-						"method": "GET",
-						"body": {}
+							]
+						}
 					},
 					"status": "Internal Server Error",
 					"code": 500,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Content-Type",
 							"value": "application/json"
 						}
 					],
-					"body": "{\n  \"code\": 90069313,\n  \"message\": \"ullamco in enim\"\n}",
 					"cookie": [],
-					"_postman_previewlanguage": "json"
+					"body": "{\n  \"code\": 90069313,\n  \"message\": \"ullamco in enim\"\n}"
 				}
-			],
-			"event": [],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7f1f5ffd-6658-49cf-8594-68f5da9d3712",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "10dd94ce-0c21-45af-9ca7-3d2459b51865",
+				"type": "text/javascript",
+				"exec": [
+					"das"
+				]
 			}
 		}
 	],
-	"event": [],
 	"variable": [
 		{
-			"type": "string",
+			"id": "651c578a-f7e9-4e94-93b2-d1007f87eda1",
+			"key": "baseUrl",
 			"value": "http://localhost:3000",
-			"key": "baseUrl"
+			"type": "string"
 		}
-	],
-	"info": {
-		"_postman_id": "4dffb942-8376-4766-a503-6af704047ff7",
-		"name": "first",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"description": {
-			"content": "",
-			"type": "text/plain"
-		}
-	}
+	]
 }
