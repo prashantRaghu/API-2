@@ -1,4 +1,4 @@
-id = 7ec5668d-82fb-4dbb-90bd-6cc682fa09dd
+id = 492cb2a0-a105-427a-850b-0d787f411390
 
 [relations]
 
@@ -12,6 +12,7 @@ files[] = {"id":"8ea86b96-b391-4682-8c6e-581dc0c4c362","path":"new C_889210-8ea8
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
+files[] = {"path":"index.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
