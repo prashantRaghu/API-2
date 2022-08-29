@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
   version: '1.0.0'
-  title: 'Sample APIs'
+  title: 'Sample API'
   license:
     name: MIT
 servers:
-  - url: 'localhost:3'
+  - url: 'localhost:3000'
 paths:
   /user:
     get:
