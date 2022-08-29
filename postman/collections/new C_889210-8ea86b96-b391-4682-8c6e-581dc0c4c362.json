@@ -2,7 +2,7 @@
 	"item": [
 		{
 			"id": "acab41ca-3f64-4af4-964d-22117a68b9eb",
-			"name": "Sample endpoint: Returns details about a particular user",
+			"name": "Sample endpoint Returns details about a particular user",
 			"request": {
 				"name": "Sample endpoint: Returns details about a particular user",
 				"description": {},
