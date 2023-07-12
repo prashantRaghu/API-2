@@ -1,73 +1,44 @@
-openapi: 3.0.0
+openapi: '3.0.0'
 info:
   version: '1.0.0'
   title: 'Sample API'
-  license:
-    name: MIT
-servers:
-  - url: 'localhost:3000'
+  description: Buy or rent spacecrafts
+
 paths:
-  /user:
+  /spacecrafts/{spacecraftId}:
+    parameters:
+      - name: spacecraftId
+        description: The unique identifier of the spacecraft
+        in: path
+        required: true
+        schema:
+          $ref: 'http://localhost:8080/SpacecraftId.json#components/schemas/SpacecraftId'
     get:
-      summary: 'Sample endpoint: Returns details about a particular user'
-      operationId: listUser
-      tags:
-        - user
-      parameters:
-        - name: id
-          in: query
-          description: ID of the user
-          required: true
-          schema:
-            type: integer
-            format: int32
+      summary: Read a spacecraft
       responses:
         '200':
-          description: 'Sample response: Details about a user by ID'
-          headers:
-            x-next:
-              description: A link to the next page of responses
-              schema:
-                type: string
+          description: The spacecraft corresponding to the provided `spacecraftId`
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
-        default:
+                $ref: 'http://localhost:8080/Spacecraft.json#components/schemas/Spacecraft'
+        404:
+          description: No spacecraft found for the provided `spacecraftId`
+          content:
+            application/json:
+              schema:
+                $ref: 'http://localhost:8080/Error.json'
+        500:
           description: Unexpected error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: 'http://localhost:8080/Error.json'
 components:
-  schemas:
-    User:
-      type: object
-      required:
-        - id
-        - name
-      properties:
-        id:
-          type: integer
-          format: int64
-        name:
-          type: string
-        tag:
-          type: string
-    Error:
-      type: object
-      required:
-        - code
-        - message
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
   securitySchemes:
-    BasicAuth:
-      type: http
-      scheme: basic
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-Api-Key
 security:
-  - BasicAuth: []
+  - ApiKey: []

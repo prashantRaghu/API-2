@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "4dffb942-8376-4766-a503-6af704047ff7",
+		"_postman_id": "955490f4-a747-4827-96e6-ee237ec9362e",
 		"name": "firs3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "889210-4dffb942-8376-4766-a503-6af704047ff7"
+		"_uid": "539613-955490f4-a747-4827-96e6-ee237ec9362e"
 	},
 	"item": [
 		{
 			"name": "Sample endpoint: Returns details about",
-			"id": "5cd1b839-61c9-47b2-8141-651a677b55f5",
+			"id": "9b006e67-6c59-417c-9473-d26a79549f62",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -39,7 +39,7 @@
 			},
 			"response": [
 				{
-					"id": "517ce923-3b6e-422b-9245-dfd25470917f",
+					"id": "9702fe6a-d144-4d91-b17d-91c9bd992578",
 					"name": "Sample response: Details about a user by ID",
 					"originalRequest": {
 						"method": "GET",
@@ -63,6 +63,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"disabled": false,
@@ -79,7 +80,7 @@
 					"body": "{\n  \"id\": -91679372,\n  \"name\": \"ipsum consectetur dolore amet\",\n  \"tag\": \"cillum officia commodo Lorem\"\n}"
 				},
 				{
-					"id": "074ffee2-0e0d-4cfa-8307-2a1a69947608",
+					"id": "09821bf6-8880-484d-a6db-63c5cf73632c",
 					"name": "Unexpected error has just occurred",
 					"originalRequest": {
 						"method": "GET",
@@ -103,6 +104,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -119,7 +121,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7f1f5ffd-6658-49cf-8594-68f5da9d3712",
+				"id": "04a14dc1-3594-409c-bda3-1df36d2d8a06",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -129,7 +131,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "10dd94ce-0c21-45af-9ca7-3d2459b51865",
+				"id": "8f356c90-59af-43b0-9def-43ed7ace66a0",
 				"type": "text/javascript",
 				"exec": [
 					"das"
